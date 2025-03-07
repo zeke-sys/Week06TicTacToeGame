@@ -75,12 +75,15 @@ public class GameBoard {
 	//display method to display current state of the board
 	private static void display() {
 		System.out.println("Current Board:");
+		
+		System.out.println("-------");
 		for (char[] row : board) {
 			for (char cell: row) {
-				System.out.print(cell + " ");
+				System.out.print(cell + "  ");
 			}
 			System.out.println();
 		}
+		System.out.println("-------");
 	}
 	
 	//checkWinStatus method to check if current move resulted in a win
